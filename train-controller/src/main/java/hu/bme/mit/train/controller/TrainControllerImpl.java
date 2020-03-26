@@ -8,6 +8,15 @@ public class TrainControllerImpl implements TrainController {
 	private int referenceSpeed = 0;
 	private int speedLimit = 0;
 
+	public TrainControllerImpl(){
+		Timer timer = new Timer();
+		timer.schedule(new TimerTask() {
+			@Override
+			public void run() {
+				followSpeed();
+			}
+		},500);
+
 	@Override
 	public void followSpeed() {
 		if (referenceSpeed < 0) {
