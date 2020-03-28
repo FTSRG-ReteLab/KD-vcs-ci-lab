@@ -1,5 +1,8 @@
+apply plugin: 'org.sonarqube'
+
+
 dependencies {
     compile project(':train-interfaces')
 
-	compile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'junit', name: 'junit', version: '4.12'
 }

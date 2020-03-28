@@ -14,6 +14,8 @@ public class MainTest {
     @Test
     public void ThisIsAnExampleTestStub() {
         // TODO Delete this and add test cases based on the issues
-	Assert.assertEquals(0, 0);
+	int expected = 0;
+	int actual = 0;
+	Assert.assertEquals(expected, actual);
     }
 }
